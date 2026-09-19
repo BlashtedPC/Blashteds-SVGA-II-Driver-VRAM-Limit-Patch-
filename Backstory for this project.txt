@@ -8,7 +8,7 @@ Games can now confidently utilize the higher VRAM available to them as advertise
 
 AI Summary that breaks down what I did and what the root cause was: 
 
-I spent some time reverse-engineering the Windows 2000 vmx_svga.sys driver in Ghidra because my VM was configured with 128 MB VRAM, but Windows 2000 was only reporting 64 MB.
+I spent some time reverse-engineering the Windows 2000 vmx_svga.sys driver in Ghidra because my VM was configured with 128 MB VRAM, but Windows 2000 was only reporting 64 MB. 
 
 The issue turned out to be a hard-coded 64 MiB cap in the SVGA II driver.
 
