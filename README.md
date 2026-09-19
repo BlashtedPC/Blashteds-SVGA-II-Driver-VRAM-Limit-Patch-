@@ -33,7 +33,7 @@ Additionally, please ensure you have already set your VRAM memory size for the V
 
 E.g. svga.vramSize = "134217728"
 
-Note: I do not recommend going 256MB for Windows 2000 as you could potentially run into issues. 512MB of RAM would be overkill anyway for games release during this OS era in the early to mid 2000s.
+Note: It is not recommended going above 256MB for Windows 2000 as you could potentially run into issues. 512MB of VRAM would be overkill anyway for games released during this OS' era in the early to mid 2000s.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
