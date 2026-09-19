@@ -1,6 +1,6 @@
 Known Issues:
 
-~ Some games may exhibit low FPS for 1-2 minutes after enterting gameplay (e.g Harry Potter and the Chamber of Secrets). 
-This appears to disappear completely after a couple of minutes of gameplay while textures load and FPS stablizes to a normal 60FPS. (9/17/26)
+~ Some games may exhibit low FPS for 1-2 minutes after enterting gameplay (e.g Harry Potter and the Chamber of Secrets)
+This appears to disappear completely after a couple of minutes of gameplay while textures load and FPS stablizes to a normal 60FPS. Cause is unknown. (9/17/26)
 
 ~ 
