@@ -21,7 +21,7 @@ The patcher modifies the user's own copy of `vmx_svga.sys`. The original VMware 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
----BEFORE BEGINNING, MAKE SURE TO EDIT YOUR VIRTUAL MACHINE'S .VMX FILE AND CHANGE "virtualHW.version" TO "8" OTHERWISE DIRECT3D SUPPORT WILL NOT WORK---
+BEFORE BEGINNING, MAKE SURE TO EDIT YOUR VIRTUAL MACHINE'S .VMX FILE AND CHANGE "virtualHW.version" TO "8" OTHERWISE DIRECT3D SUPPORT WILL NOT WORK!!!
 
 ## 1. Get your original `vmx_svga.sys`
 
