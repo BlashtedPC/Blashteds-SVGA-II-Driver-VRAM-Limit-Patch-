@@ -19,7 +19,7 @@ The patcher modifies the user's own copy of `vmx_svga.sys`. The original VMware 
 * `patch-vmx-svga.ps1` from this repository
 * A Windows 2000 VM using the VMware SVGA II driver with hardware version 8 set
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
 Before beginning, make sure to edit your virtual machine's .VMX file and change "virtualHW.version" to "8". Otherwise, Direct3D support will not work!
 
