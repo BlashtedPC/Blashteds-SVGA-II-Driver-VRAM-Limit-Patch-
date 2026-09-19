@@ -21,7 +21,9 @@ The patcher modifies the user's own copy of `vmx_svga.sys`. The original VMware 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
-Before beginning, make sure to edit your virtual machine's .VMX file and change "virtualHW.version" to "8". Otherwise, Direct3D support will not work!
+Important: VMware Hardware Version
+
+For Windows 2000 3D acceleration, this driver has been tested with VMware virtual hardware version 8. Newer virtual hardware versions may not provide the same compatibility with the legacy SVGA II/VMware Tools stack. If hardware version 8 is not used, Direct3D support will be disabled.
 
 ## 1. Get your original `vmx_svga.sys`
 
