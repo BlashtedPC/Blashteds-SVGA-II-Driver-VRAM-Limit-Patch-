@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/BlashtedPC/Blashteds-SVGA-II-Driver-VRAM-Limit-Patch-/raw/refs/heads/main/windows-2000-2y-1366x768.png" alt="Windows 2000 VMware SVGA II" width="900">
+  <img src="https://github.com/BlashtedPC/Blashteds-SVGA-II-Driver-VRAM-Limit-Patch-/blob/main/Definitely%20Not%20AI.png" alt="Definitely Not AI" width="900">
 </p>
 
 # Blashted's VMware SVGA II Driver VRAM Limit Patch
