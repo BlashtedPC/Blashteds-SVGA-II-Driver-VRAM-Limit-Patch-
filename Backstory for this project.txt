@@ -4,28 +4,6 @@ This was a deliberate effort to help further the preservation of retro PC gaming
 
 Games can now confidently utilize the higher VRAM available to them as advertised and Windows 2000 will now display the correct information appropriately. No more guesswork if the higher VRAM is actually being used by games or if such information is relayed to the program. We can be confident that the higher VRAM shown is available and ready to use. 
 
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Prerequisites: 
-
-Please ensure you have your VMware WorkStation Pro set to virtual hardware version 8 in the .vmx file (newer doesn't support proper Direct3D acceleration!)
-This has not been tested in Windows XP, Windows ME, Windows 98/95. 
-
-Steps: (View the full README on GitHub for step by step!)
-
-Acquire VMTools 10.0.12 with the SVGA II driver included
-Run the patch-vmx-svga.ps1 PowerShell script to patch your SVGA driver
-Open Workstation 
-Hit F8 during VM boot
-Enter VGA mode
-Navigate to C:\WINNT\system32\drivers\vmx_svga.sys
-Backup the working .sys in a temporary folder somewhere
-Replace the current C:\WINNT\system32\drivers\vmx_svga.sys driver with the patched one
-Reboot Windows normally
-
-You should now be able to load into Windows 2000 without issue. Head over to Desktop > Right-click > Properties > Settings > Advanced > Adapter. Additionally, hit Win + R and enter dxdiag and head over to the display tab. You should now see the increased VRAM for use in Windows 2000 for gaming. 
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 AI Summary that breaks down what I did and what the root cause was: 
@@ -67,19 +45,3 @@ So the short version:
 VMware was providing 128 MB, but the Windows 2000 SVGA II driver was deliberately clamping the reported VRAM to 64 MiB for SVGA IDs 400/500. A 2-byte patch removes that cap.
 
 This appeared to be a driver-side limitation rather than a limitation of the VMware virtual hardware itself.
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Legal / Distribution Notice
-
-This project is an independent reverse-engineering and preservation effort and is not affiliated with, endorsed by, or sponsored by VMware or Broadcom.
-
-vmx_svga.sys is proprietary VMware software. This repository does not claim ownership of, or grant any license to, VMware software. This project does not provide a direct download for vmx_svga.sys.
-
-The patch information and patching tools in this repository are provided for research, compatibility, preservation, and educational purposes. 
-
-The VMware driver itself remains the property of its respective rights holder. VMware and Broadcom trademarks are used solely to identify the software and hardware discussed by this project.
-
-No warranty is provided. The modified driver is unsupported by VMware/Broadcom and is provided solely as an experimental compatibility fix for legacy Windows 2000 virtual machines.
-
--Blashted (9/17/26)
