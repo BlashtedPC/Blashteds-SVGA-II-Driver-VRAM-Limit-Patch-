@@ -6,7 +6,7 @@
 
 Patching `vmx_svga.sys`
 
-This patch removes a hard-coded 64 MiB VRAM limit in the VMware SVGA II driver used by VMware Tools 10.0.12.
+This patch removes a hard-coded 64 MiB VRAM limit in the VMware SVGA II driver used by VMware Tools 10.0.12 which affects certain device IDs. 
 
 The patcher modifies the user's own copy of `vmx_svga.sys`. The original VMware driver is not included with this project. This has not been tested in Windows XP, Windows ME, or Windows 98/95. 
 
