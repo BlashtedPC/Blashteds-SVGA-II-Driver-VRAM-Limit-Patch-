@@ -21,9 +21,21 @@ The patcher modifies the user's own copy of `vmx_svga.sys`. The original VMware 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
-Important: VMware Hardware Version
+Important Notes Beforehand: VMware Hardware Version & VRAM Configuration 
 
 For Windows 2000 3D acceleration, this driver has been tested with VMware virtual hardware version 8. Newer virtual hardware versions may not provide the same compatibility with the legacy SVGA II/VMware Tools stack. If hardware version 8 is not used, Direct3D support will be disabled.
+
+Additionally, please ensure you have already set your VRAM memory size for the VM by editing your .vmx file in Notepad. CTRL + F for and change the numeric value for "svga.vramSize" to the desired VRAM amount in byte. 
+
+67108864 = 64 MiB
+134217728 = 128 MiB
+268435456 = 256 MiB
+
+E.g. svga.vramSize = "134217728"
+
+Note: I do not recommend going 256MB for Windows 2000 as you could potentially run into issues. 512MB of RAM would be overkill anyway for games release during this OS era in the early to mid 2000s.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
 ## 1. Get your original `vmx_svga.sys`
 
