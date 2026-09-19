@@ -1,4 +1,8 @@
-## Patching `vmx_svga.sys`
+<p align="center">
+  <img src="https://github.com/BlashtedPC/Blashteds-SVGA-II-Driver-VRAM-Limit-Patch-/raw/refs/heads/main/windows-2000-2y-1366x768.png" alt="Windows 2000 VMware SVGA II" width="900">
+</p>
+
+# VMware SVGA II Driver VRAM Limit Patch## Patching `vmx_svga.sys`
 
 This patch removes a hard-coded 64 MiB VRAM limit in the VMware SVGA II driver used by VMware Tools 10.0.12.
 
