@@ -8,16 +8,20 @@ Patching `vmx_svga.sys`
 
 This patch removes a hard-coded 64 MiB VRAM limit in the VMware SVGA II driver used by VMware Tools 10.0.12.
 
-The patcher modifies the user's own copy of `vmx_svga.sys`. The original VMware driver is not included with this project.
+The patcher modifies the user's own copy of `vmx_svga.sys`. The original VMware driver is not included with this project. This has not been tested in Windows XP, Windows ME, Windows 98/95. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Requirements
 
-* A modern Windows PC with PowerShell
-* Your own copy of `vmx_svga.sys` from VMware Tools 10.0.12
+* A modern Windows PC with PowerShell installed
+* Your own copy of `vmx_svga.sys` from VMware Tools 10.0.12 toolkit
 * `patch-vmx-svga.ps1` from this repository
-* A Windows 2000 VM using the VMware SVGA II driver
+* A Windows 2000 VM using the VMware SVGA II driver with hardware version 8 set
 
----
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---BEFORE BEGINNING, MAKE SURE TO EDIT YOUR VIRTUAL MACHINE'S .VMX FILE AND CHANGE "virtualHW.version" TO "8" OTHERWISE DIRECT3D SUPPORT WILL NOT WORK---
 
 ## 1. Get your original `vmx_svga.sys`
 
