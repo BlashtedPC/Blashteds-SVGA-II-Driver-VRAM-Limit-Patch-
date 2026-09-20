@@ -29,7 +29,7 @@ Additionally, please ensure you have already set your VRAM memory size for the V
 
 * 67108864 = 64 MiB (AVAILABLE NOW)
 * 134217728 = 128 MiB (AVAILABLE NOW)
-* 268435456 = 256 MiB (CURRENTLY NOT SUPPORTED, WILL ADDRESS IN NEXT RELEASE)
+* 268435456 = 256 MiB (CURRENTLY NOT SUPPORTED)
 
 E.g. svga.vramSize = "134217728"
 
