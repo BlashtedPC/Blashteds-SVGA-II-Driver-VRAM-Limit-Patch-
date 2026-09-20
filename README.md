@@ -27,10 +27,10 @@ For Windows 2000 3D acceleration, this driver patch has been tested with VMware 
 
 Additionally, please ensure you have already set your VRAM memory size for the VM by editing your .vmx file in Notepad. CTRL + F for "svga.vramSize" and change the numeric value to the desired VRAM amount in bytes. 
 
-* 67108864 = 64 MiB (AVAILABLE NOW)
-* 134217728 = 128 MiB (AVAILABLE NOW)
-* 268435456 = 256 MiB (CURRENTLY NOT SUPPORTED) [See Issue#2](https://github.com/BlashtedPC/Blashteds-SVGA-II-Driver-VRAM-Limit-Patch-/issues/2)
-* 
+* 67108864 = 64 MiB (Supported)
+* 134217728 = 128 MiB (Supported)
+* 268435456 = 256 MiB (Currently Not Supported, [See Issue#2](https://github.com/BlashtedPC/Blashteds-SVGA-II-Driver-VRAM-Limit-Patch-/issues/2)
+  
 E.g. svga.vramSize = "134217728"
 
 Note: It is not recommended going above 256MB for Windows 2000 as you could potentially run into issues. 512MB of VRAM would be overkill anyway for games released during this OS' era in the early to mid 2000s.
