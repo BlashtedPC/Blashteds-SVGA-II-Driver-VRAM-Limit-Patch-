@@ -29,7 +29,7 @@ Additionally, please ensure you have already set your VRAM memory size for the V
 
 * 67108864 = 64 MiB (Supported)
 * 134217728 = 128 MiB (Supported)
-* 268435456 = 256 MiB (Currently Not Supported, [See Issue#2](https://github.com/BlashtedPC/Blashteds-SVGA-II-Driver-VRAM-Limit-Patch-/issues/2)
+* 268435456 = 256 MiB (Currently Not Supported, [See Issue#2](https://github.com/BlashtedPC/Blashteds-SVGA-II-Driver-VRAM-Limit-Patch-/issues/2))
   
 E.g. svga.vramSize = "134217728"
 
