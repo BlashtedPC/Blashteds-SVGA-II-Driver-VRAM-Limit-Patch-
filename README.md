@@ -27,9 +27,9 @@ For Windows 2000 3D acceleration, this driver patch has been tested with VMware 
 
 Additionally, please ensure you have already set your VRAM memory size for the VM by editing your .vmx file in Notepad. CTRL + F for "svga.vramSize" and change the numeric value to the desired VRAM amount in bytes. 
 
-* 67108864 = 64 MiB
-* 134217728 = 128 MiB
-* 268435456 = 256 MiB
+* 67108864 = 64 MiB (AVAILABLE NOW)
+* 134217728 = 128 MiB (AVAILABLE NOW)
+* 268435456 = 256 MiB (CURRENTLY NOT SUPPORTED, WILL ADDRESS IN NEXT RELEASE)
 
 E.g. svga.vramSize = "134217728"
 
