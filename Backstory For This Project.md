@@ -1,3 +1,5 @@
+### Backstory:
+
 After hours of deliberate tinkering with Ghidra on multiple different patch drafts, various PowerShell commands, failing checksums and the great help of AI for reverse engineering, I was able to successfully patch the problematic VMware SVGA II "vmx_svga.sys" driver with a two-byte patch to correctly reflect the higher VRAM in the OS now, specifically the driver's architectural maximum of 128MB.
 
 This was a deliberate effort to help further the preservation of retro PC gaming. One of the big problems that we will one day face with retro gaming is that retro PC parts are becoming less and less available by the year and top notch parts from the era are not cheap for their relative age. Things break down, capacitors/power supplies blow, old hard drives go kaput. One day there will no longer be an affordable or viable option for building a retro gaming PC. While online storefronts like GOG offer their own preservation programs to bring old games back from the dead with modern OS compatibility fixes, the releases are drops in a swimming pool compared to all of the games lost to time from this era. Many games will never see a release on GOG nor will they ever get a proper modern port from major companies. Many are PC exclusive and never saw console release. It is important that just like video game console emulation projects (like Dolphin, PCSX2, RPCS3, etc.), we do everything we can to also preserve PC gaming from a lost era that should not only be accessible to everyone, but also support a complete library of old games that are not only preserved, but are also able to be played in an environment offering solid game performance on your own local machine in the easiest way possible. 
@@ -6,7 +8,7 @@ Cheers everybody! 🍻
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Additional Notes:
+### Additional Notes:
 
 (Games can now confidently utilize the higher VRAM available to them as advertised and Windows 2000 will now display the correct information appropriately. No more guesswork if the higher VRAM is actually being used by games or if such information is relayed to the program. We can be confident that the higher VRAM shown is available and ready to use. For example, CivCity Rome (2006) recommends 128MB for maximum settings, and it runs smoothly at 1600x1200@60Hz Highest Settings via the patched driver. Additonally, 3DMark2001SE reports scores well over 23,000 for a 1600x1200 Highest Settings Benchmark Test. This driver patch is a nice fix because mid-2000s games started advocating or even requiring 128MB VRAM as technology advanced. This fix enables Windows 2000 VMware VMs to properly play the later years of that OS' gaming cycle with appropriate resources without forcing you over to XP which has it's own issues.)
 
@@ -14,7 +16,7 @@ Original Discussion Thread: https://community.broadcom.com/vmware-cloud-foundati
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-AI Summary that breaks down what I did and what the root cause was:  
+### AI Summary that breaks down what I did and what the root cause was:  
 
 I spent some time reverse-engineering the Windows 2000 vmx_svga.sys driver in Ghidra because my VM was configured with 128 MB VRAM, but Windows 2000 was only reporting 64 MB. 
 
