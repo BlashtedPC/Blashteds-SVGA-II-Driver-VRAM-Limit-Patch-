@@ -29,8 +29,8 @@ Additionally, please ensure you have already set your VRAM memory size for the V
 
 * 67108864 = 64 MiB (AVAILABLE NOW)
 * 134217728 = 128 MiB (AVAILABLE NOW)
-* 268435456 = 256 MiB (CURRENTLY NOT SUPPORTED)
-
+* 268435456 = 256 MiB (CURRENTLY NOT SUPPORTED) [See Issue#2](https://github.com/BlashtedPC/Blashteds-SVGA-II-Driver-VRAM-Limit-Patch-/issues/2)
+* 
 E.g. svga.vramSize = "134217728"
 
 Note: It is not recommended going above 256MB for Windows 2000 as you could potentially run into issues. 512MB of VRAM would be overkill anyway for games released during this OS' era in the early to mid 2000s.
