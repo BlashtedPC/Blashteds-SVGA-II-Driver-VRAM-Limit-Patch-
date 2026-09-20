@@ -6,6 +6,8 @@ Cheers everybody! 🍻
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Additional Notes:
+
 (Games can now confidently utilize the higher VRAM available to them as advertised and Windows 2000 will now display the correct information appropriately. No more guesswork if the higher VRAM is actually being used by games or if such information is relayed to the program. We can be confident that the higher VRAM shown is available and ready to use. For example, CivCity Rome (2006) recommends 128MB for maximum settings, and it runs smoothly at 1600x1200@60Hz Highest Settings via the patched driver. Additonally, 3DMark2001SE reports scores well over 23,000 for a 1600x1200 Highest Settings Benchmark Test. This driver patch is a nice fix because mid-2000s games started advocating or even requiring 128MB VRAM as technology advanced. This fix enables Windows 2000 VMware VMs to properly play the later years of that OS' gaming cycle with appropriate resources without forcing you over to XP which has it's own issues.)
 
 Original Discussion Thread: https://community.broadcom.com/vmware-cloud-foundation/discussion/workstation-pro-26h1-set-to-128mb-vram-but-windows-2000-vm-not-reporting-it?ReplyInline=c5bfd581-5335-4df9-9f50-7e0a2568f1d6
