@@ -21,7 +21,9 @@ The patcher modifies the user's own copy of `vmx_svga.sys`. The original VMware 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
-Important Notes Beforehand: VMware Hardware Version & VRAM Configuration 
+### Important Notes Beforehand:
+
+VMware Hardware Version & VRAM Configuration 
 
 For Windows 2000 3D acceleration, this driver patch has been tested with VMware virtual hardware version 8. Newer virtual hardware versions may not provide the same compatibility with the legacy SVGA II/VMware Tools stack. If hardware version 8 is not used, Direct3D support will be disabled.
 
